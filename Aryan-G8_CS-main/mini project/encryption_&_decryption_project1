@@ -1,0 +1,410 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+// this is the function for encription
+
+string encription(string &s) {
+  string p = "";
+
+  // run the for loop until the length of string is equal to i-1 so that we can
+  // check every character of string
+
+  for (int i = 0; i < s.length(); i++) {
+
+    //  assign the value to p after encript the data if the condition inside the
+    //  if and else if , else condition condition is satisfied
+
+    if (s[i] == '0') {
+      p += '#';
+    } else if (s[i] == '1') {
+      p += '$';
+    } else if (s[i] == '2') {
+      p += '%';
+    } else if (s[i] == '3') {
+      p += '&';
+    } else if (s[i] == '4') {
+      p += '@';
+    } else if (s[i] == '5') {
+      p += '*';
+    } else if (s[i] == '6') {
+      p += '(';
+    } else if (s[i] == '7') {
+      p += ')';
+    } else if (s[i] == '8') {
+      p += '-';
+    } else if (s[i] == '9') {
+      p += '~';
+    } else if (s[i] == 'a') {
+      p += '^';
+    } else if (s[i] == 'b') {
+      p += '{';
+    } else if (s[i] == 'c') {
+      p += '}';
+    } else if (s[i] == 'd') {
+      p += '[';
+    } else if (s[i] == 'e') {
+      p += ']';
+    } else if (s[i] == 'f') {
+      p += '|';
+    } else if (s[i] == 'g') {
+      p += ':';
+    } else if (s[i] == 'h') {
+      p += ';';
+    } else if (s[i] == 'i') {
+      p += '+';
+    } else if (s[i] == 'j') {
+      p += '0';
+    } else if (s[i] == 'k') {
+      p += '<';
+    } else if (s[i] == 'l') {
+      p += '>';
+    } else if (s[i] == 'm') {
+      p += ',';
+    } else if (s[i] == 'n') {
+      p += '.';
+    } else if (s[i] == 'o') {
+      p += '/';
+    } else if (s[i] == 'p') {
+      p += '?';
+    } else if (s[i] == 'q') {
+      p += '=';
+    } else if (s[i] == 'r') {
+      p += '_';
+    } else if (s[i] == 's') {
+      p += '!';
+    } else if (s[i] == 't') {
+      p += 'j';
+    } else if (s[i] == 'u') {
+      p += 'Z';
+    } else if (s[i] == 'v') {
+      p += 'w';
+    } else if (s[i] == 'w') {
+      p += 'm';
+    } else if (s[i] == 'x') {
+      p += 'Y';
+    } else if (s[i] == 'y') {
+      p += 'o';
+    } else if (s[i] == 'z') {
+      p += 'p';
+    } else if (s[i] == '!') {
+      p += '2';
+    } else if (s[i] == '@') {
+      p += '1';
+    } else if (s[i] == '#') {
+      p += '4';
+    } else if (s[i] == '$') {
+      p += 'R';
+    } else if (s[i] == '%') {
+      p += '6';
+    } else if (s[i] == '^') {
+      p += '3';
+    } else if (s[i] == '&') {
+      p += '8';
+    } else if (s[i] == '*') {
+      p += '5';
+    } else if (s[i] == '(') {
+      p += '7';
+    } else if (s[i] == ')') {
+      p += '9';
+    } else if (s[i] == '-') {
+      p += 'b';
+    } else if (s[i] == '+') {
+      p += 'e';
+    } else if (s[i] == '=') {
+      p += 'a';
+    } else if (s[i] == '_') {
+      p += 'i';
+    } else if (s[i] == '[') {
+      p += 'd';
+    } else if (s[i] == ']') {
+      p += 'g';
+    } else if (s[i] == '<') {
+      p += 'c';
+    } else if (s[i] == '>') {
+      p += 'f';
+    } else if (s[i] == '|') {
+      p += 'h';
+    } else if (s[i] == ':') {
+      p += 'u';
+    } else if (s[i] == ';') {
+      p += 'k';
+    } else if (s[i] == ',') {
+      p += 'K';
+    } else if (s[i] == '.') {
+      p += 's';
+    } else if (s[i] == '/') {
+      p += 'q';
+    } else if (s[i] == '?') {
+      p += 'r';
+    } else if (s[i] == 'A') {
+      p += 'v';
+    } else if (s[i] == 'B') {
+      p += 'x';
+    } else if (s[i] == 'C') {
+      p += 'y';
+    } else if (s[i] == 'D') {
+      p += 'z';
+    } else if (s[i] == 'E') {
+      p += 'A';
+    } else if (s[i] == 'F') {
+      p += 'M';
+    } else if (s[i] == 'G') {
+      p += 'O';
+    } else if (s[i] == 'H') {
+      p += 'J';
+    } else if (s[i] == 'I') {
+      p += 'X';
+    } else if (s[i] == 'J') {
+      p += 't';
+    } else if (s[i] == 'K') {
+      p += 'B';
+    } else if (s[i] == 'L') {
+      p += 'D';
+    } else if (s[i] == 'M') {
+      p += 'C';
+    } else if (s[i] == 'N') {
+      p += 'E';
+    } else if (s[i] == 'O') {
+      p += 'L';
+    } else if (s[i] == 'P') {
+      p += 'N';
+    } else if (s[i] == 'Q') {
+      p += 'I';
+    } else if (s[i] == 'R') {
+      p += 'H';
+    } else if (s[i] == 'S') {
+      p += 'F';
+    } else if (s[i] == 'T') {
+      p += 'G';
+    } else if (s[i] == 'U') {
+      p += 'W';
+    } else if (s[i] == 'V') {
+      p += 'Q';
+    } else if (s[i] == 'W') {
+      p += 'T';
+    } else if (s[i] == 'X') {
+      p += 'P';
+    } else if (s[i] == 'Y') {
+      p += 'V';
+    } else if (s[i] == 'Z') {
+      p += 'U';
+    } else if (s[i] == ' ') {
+      p += 'n';
+    } else {
+      continue;
+    }
+  }
+  return p; // return the string p that contain encript data
+}
+
+// for dectiption method the code become
+
+string decription(string &s) { // using pass by refrence as input string
+  string p = "";
+
+  // run the for loop until the length of string is equal to i-1 so that we can
+  // check every character of string
+
+  for (int i = 0; i < s.length(); i++) {
+
+    //  assign the value to p after decript the data if the condition inside the
+    //  if and else if , else condition condition is satisfied
+
+    if (s[i] == '#') {
+      p += '0';
+    } else if (s[i] == '$') {
+      p += '1';
+    } else if (s[i] == '%') {
+      p += '2';
+    } else if (s[i] == '&') {
+      p += '3';
+    } else if (s[i] == '@') {
+      p += '4';
+    } else if (s[i] == '*') {
+      p += '5';
+    } else if (s[i] == '(') {
+      p += '6';
+    } else if (s[i] == ')') {
+      p += '7';
+    } else if (s[i] == '-') {
+      p += '8';
+    } else if (s[i] == '~') {
+      p += '9';
+    } else if (s[i] == '^') {
+      p += 'a';
+    } else if (s[i] == '{') {
+      p += 'b';
+    } else if (s[i] == '}') {
+      p += 'c';
+    } else if (s[i] == '[') {
+      p += 'd';
+    } else if (s[i] == ']') {
+      p += 'e';
+    } else if (s[i] == '|') {
+      p += 'f';
+    } else if (s[i] == ':') {
+      p += 'g';
+    } else if (s[i] == ';') {
+      p += 'h';
+    } else if (s[i] == '+') {
+      p += 'i';
+    } else if (s[i] == '0') {
+      p += 'j';
+    } else if (s[i] == '<') {
+      p += 'k';
+    } else if (s[i] == '>') {
+      p += 'l';
+    } else if (s[i] == ',') {
+      p += 'm';
+    } else if (s[i] == '.') {
+      p += 'n';
+    } else if (s[i] == '/') {
+      p += 'o';
+    } else if (s[i] == '?') {
+      p += 'p';
+    } else if (s[i] == '=') {
+      p += 'q';
+    } else if (s[i] == '_') {
+      p += 'r';
+    } else if (s[i] == '!') {
+      p += 's';
+    } else if (s[i] == 'j') {
+      p += 't';
+    } else if (s[i] == 'Z') {
+      p += 'u';
+    } else if (s[i] == 'w') {
+      p += 'v';
+    } else if (s[i] == 'm') {
+      p += 'w';
+    } else if (s[i] == 'Y') {
+      p += 'x';
+    } else if (s[i] == 'o') {
+      p += 'y';
+    } else if (s[i] == 'p') {
+      p += 'z';
+    } else if (s[i] == '2') {
+      p += '!';
+    } else if (s[i] == '1') {
+      p += '@';
+    } else if (s[i] == '4') {
+      p += '#';
+    } else if (s[i] == 'R') {
+      p += '$';
+    } else if (s[i] == '6') {
+      p += '%';
+    } else if (s[i] == '3') {
+      p += '^';
+    } else if (s[i] == '8') {
+      p += '&';
+    } else if (s[i] == '5') {
+      p += '*';
+    } else if (s[i] == '7') {
+      p += '(';
+    } else if (s[i] == '9') {
+      p += ')';
+    } else if (s[i] == 'b') {
+      p += '-';
+    } else if (s[i] == 'e') {
+      p += '+';
+    } else if (s[i] == 'a') {
+      p += '=';
+    } else if (s[i] == 'i') {
+      p += '_';
+    } else if (s[i] == 'd') {
+      p += '[';
+    } else if (s[i] == 'g') {
+      p += ']';
+    } else if (s[i] == 'c') {
+      p += '<';
+    } else if (s[i] == 'f') {
+      p += '>';
+    } else if (s[i] == 'h') {
+      p += '|';
+    } else if (s[i] == 'u') {
+      p += ':';
+    } else if (s[i] == 'k') {
+      p += ';';
+    } else if (s[i] == 'K') {
+      p += ',';
+    } else if (s[i] == 's') {
+      p += '.';
+    } else if (s[i] == 'q') {
+      p += '/';
+    } else if (s[i] == 'r') {
+      p += '?';
+    } else if (s[i] == 'v') {
+      p += 'A';
+    } else if (s[i] == 'x') {
+      p += 'B';
+    } else if (s[i] == 'y') {
+      p += 'C';
+    } else if (s[i] == 'z') {
+      p += 'D';
+    } else if (s[i] == 'A') {
+      p += 'E';
+    } else if (s[i] == 'M') {
+      p += 'F';
+    } else if (s[i] == 'O') {
+      p += 'G';
+    } else if (s[i] == 'J') {
+      p += 'H';
+    } else if (s[i] == 'X') {
+      p += 'I';
+    } else if (s[i] == 't') {
+      p += 'J';
+    } else if (s[i] == 'B') {
+      p += 'K';
+    } else if (s[i] == 'D') {
+      p += 'L';
+    } else if (s[i] == 'C') {
+      p += 'M';
+    } else if (s[i] == 'E') {
+      p += 'N';
+    } else if (s[i] == 'L') {
+      p += 'O';
+    } else if (s[i] == 'N') {
+      p += 'P';
+    } else if (s[i] == 'I') {
+      p += 'Q';
+    } else if (s[i] == 'H') {
+      p += 'R';
+    } else if (s[i] == 'F') {
+      p += 'S';
+    } else if (s[i] == 'G') {
+      p += 'T';
+    } else if (s[i] == 'W') {
+      p += 'U';
+    } else if (s[i] == 'Q') {
+      p += 'V';
+    } else if (s[i] == 'T') {
+      p += 'W';
+    } else if (s[i] == 'P') {
+      p += 'X';
+    } else if (s[i] == 'V') {
+      p += 'Y';
+    } else if (s[i] == 'U') {
+      p += 'Z';
+    } else if (s[i] == 'n') {
+      p += ' ';
+    } else {
+      continue;
+    }
+  }
+  return p; // return the string p that contain decript data
+}
+int main() {
+
+  string s; // define string s
+
+  string m, n; // define string m,n
+
+  cout << "Enter the string s : ";
+  getline(cin, s);  // here we use the get line function to get the characters after the blank space also example aryan bhandari here blank space is come after n       character in aryan bhandari  
+  m = encription(s); // this is for encription
+  cout << "the encripted code is : " << m;
+  cout << endl;
+  n = decription(m); // this is the decription method
+  cout << "the decripted code is : " << n;
+  return 0;
+}
